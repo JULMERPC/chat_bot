@@ -1,0 +1,21 @@
+{
+  "informacion": {
+    "descripcion": "La hackatón comienza el 1 de junio y termina el 3 de junio.",
+    "reglas": "No se permite el plagio. Los equipos deben ser de 3-5 personas.",
+    "premios": "1er lugar: $1000, 2do lugar: $500, 3er lugar: $300."
+  },
+  "agenda": [
+    "1 de junio: apertura y primer taller a las 9:00 AM.",
+    "2 de junio: desarrollo de proyectos.",
+    "3 de junio: presentación final y premiación."
+  ],
+  "recordatorios": [
+    "El plazo de inscripción cierra el 30 de mayo.",
+    "El primer taller será el 1 de junio a las 9:00 AM."
+  ],
+  "recursos": {
+    "python": "https://docs.python.org/es/3/tutorial/",
+    "flask": "https://flask.palletsprojects.com/en/2.3.x/",
+    "github": "https://docs.github.com/es/get-started/quickstart"
+  }
+}

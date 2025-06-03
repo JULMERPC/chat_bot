@@ -1,0 +1,42 @@
+<!-- Información de la Empresa -->
+<section class="empresa-info" aria-labelledby="empresa-nombre">
+  <div class="empresa-header">
+    <img src="assets/logo.png" alt="Logo de INFOTEL Business SAC" class="logo" />
+    <div class="empresa-texto">
+      <h1 id="empresa-nombre" class="empresa-nombre">INFOTEL BUSINESS SAC</h1>
+      <p class="slogan">Conectando tecnología con tradición</p>
+    </div>
+  </div>
+
+  <div class="descripcion">
+    <p><strong>Importación de maquinaria</strong> especializada para los sectores textil y tecnológico.</p>
+    <p><strong>Exportación de prendas de vestir y artesanías</strong> de calidad a nivel nacional e internacional.</p>
+    <p><strong>Atención al mercado local</strong> con ropa, accesorios para el hogar y piezas artesanales únicas.</p>
+    <p><em>Nuestra misión es fusionar lo mejor de la innovación tecnológica con la riqueza de nuestras tradiciones.</em></p>
+  </div>
+</section>
+
+<!-- ChatBot de Atención -->
+<section class="chatbot" aria-labelledby="chatbot-title">
+  <h2 id="chatbot-title" class="chatbot-title">🤖 Asistente Virtual de INFOTEL</h2>
+
+  <div class="chat-historial" role="log" aria-live="polite">
+    <div *ngFor="let item of historial" class="chat-mensaje">
+      <div class="usuario" aria-label="Pregunta del usuario">👤 {{ item.pregunta }}</div>
+      <div class="bot" aria-label="Respuesta del asistente">🤖 <span [innerHTML]="item.respuesta"></span></div>
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <label for="mensaje-input" class="visually-hidden">Escribe tu consulta</label>
+    <input id="mensaje-input" [(ngModel)]="mensaje" placeholder="Haz tu consulta aquí..." />
+    <button (click)="enviar()" aria-label="Enviar mensaje">Enviar</button>
+  </div>
+
+  <div class="preguntas-rapidas">
+    <p>Preguntas rápidas:</p>
+    <button (click)="enviarRapido('¿Qué productos textiles ofrecen?')">Productos textiles</button>
+    <button (click)="enviarRapido('¿Cómo realizan las exportaciones?')">Exportaciones</button>
+    <button (click)="enviarRapido('¿Dónde se ubica INFOTEL?')">Ubicación</button>
+  </div>
+</section>
